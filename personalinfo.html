@@ -1,0 +1,181 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>HMS</title>
+    <link rel="icon" type="text/css" href="img/HMS.jpg"></link>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="bg" style="background-color: MediumSeaGreen; background-size: cover;">
+
+        <!-- navbar -->
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <a class="navbar-brand" href="#"><img src="HMS.jpg" style="width:1500px;height:550px;"></a>
+        <ul class="navbar-nav ml-auto mt-lg-0">
+        	<li class="nav-item active">
+                <a class="nav-link" href="loginindex.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            
+            <li class="nav-item">
+                <a class="nav-link" href="registration.htm">Registration</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="signin.html">Sign In</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<section class="form-simple">
+	<br>
+	<br>
+
+<!--Form with header-->
+<div class="card" style="background-color: MediumSeaGreen; background-size: cover;">
+	<div class="container">
+		<div class="row col-md-6 col-md-offset-6">
+		   <div class="panel panel-primary">
+			  <div class="panel-heading text-center">
+				<h2 style="background-color: red; color: black;"><center>Personal Information</center></h2>
+				<br>
+				<h3>Please Enter Your Personal Information Below to Register on Hospital Management System.</h3>		
+					
+			  </div>
+			  <div class="panel-body">
+				<form action="personalinfo.php" method="post">
+					<div class="form-group">
+						<label for="firstName">Name</label>
+						<input type="text" class="form-control" id="firstName" name="name">
+					</div>
+					<br>
+					
+					<div class="form-group">
+						<label for="email">Email</label>
+						<input type="text" class="form-control" id="email" name="email">
+					</div>
+					<br>
+					<div class="form-group">
+						<label for="lastName">Contact No</label>
+						<input type="text" class="form-control" id="lastName" name="contactno">
+					</div>
+					<br>
+					<div class="form-group">
+						<label for="lastName">Father's Name</label>
+						<input type="text" class="form-control" id="lastName" name="fathername">
+					</div>
+					<br>
+					<div class="form-group">
+						<label for="lastName">Father's Contact No</label>
+						<input type="text" class="form-control" id="lastName" name="fathercontactno">
+					</div>
+					<br>
+					<div class="form-group">
+						<label for="lastName">Mother's Name</label>
+						<input type="text" class="form-control" id="lastName" name="Mothername">
+					</div>
+					<br>
+					<div class="form-group">
+						<label for="lastName">Mother's Contact No</label>
+						<input type="text" class="form-control" id="lastName" name="Mothercontactno">
+					</div>
+					<br>
+					<div class="form-group">
+						<label for="lastName">Local Guardian Name</label>
+						<input type="text" class="form-control" id="lastName" name="LGname">
+					</div>
+					<br>
+					<div class="form-group">
+						<label for="lastName">Local Guardian Contact No</label>
+						<input type="text" class="form-control" id="lastName" name="LGcno">
+					</div>
+					<br>
+					
+					<div class="form-group">
+						<label for="lastName">Blood Group</label>
+						<input type="text" class="form-control" id="lastName" name="Bloodgroup">
+					</div>
+					<br>
+					<div class="form-group">
+						<label for="lastName">Date of Birth</label>
+						<input type="text" class="form-control" id="lastName" name="Dateofbirth">
+					</div>
+					<br>
+					<div class="form-group">
+						<label for="lastName">Place of Birth</label>
+						<input type="text" class="form-control" id="lastName" name="Placeofbirth">
+					</div>
+					<br>	
+					<div class="form-group">
+						<label for="gender">Gender</label>
+						   <div>
+						      <label for="male" class="radio-inline"><input type="radio" id="male" name="Gender" value="male">Male</label>
+					       
+						      <label for="female" class="radio-inline"><input type="radio" id="female" name="Gender" value="female">FeMale</label>
+					       
+						      <label for="others" class="radio-inline"><input type="radio" id="others" name="Gender" value="others">Others</label>
+					       </div>
+					</div>
+					<br>
+					<div class="form-group">
+						<label for="Typesofcitizen">Types of Citizen</label>
+						   <div>
+						      <label for="male" class="radio-inline"><input type="radio" id="birth" name="Typesofcitizen" value="birth">By Birth</label>
+					       
+						      <label for="female" class="radio-inline"><input type="radio" id="marriage" name="Typesofcitizen" value="marriage">By Marriage</label>
+					   
+					       </div>
+					</div>
+					<br>
+					<div class="form-group">
+						<label for="text">Age</label>
+						<input type="text" class="form-control" id="password" name="Age">
+					</div>
+					<br>
+					<div class="form-group">
+						<label for="password">Religion</label>
+						<input type="text" class="form-control" id="password" name="Religion">
+					</div>
+					<br>
+					<div class="form-group">
+						<label for="number">Profession</label>
+						<input type="text" class="form-control" id="number" name="Profession">
+					</div>
+					<br>
+					<div class="form-group">
+						<label for="number">Maritalstatus</label>
+						<input type="text" class="form-control" id="number" name="Maritalstatus">
+					</div>
+					<br>
+					<input type="submit" name="" class="btn btn-primary">
+				</form>
+                   
+				<br>
+
+			  </div>
+			  <div class="panel-footer text-right">
+				<small>&copy; Rafa Siddiqua </small>
+				
+			  </div>
+		   </div>
+		</div>
+	</div>
+</div>
+</body>
+</html>
